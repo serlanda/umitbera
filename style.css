@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+.vertical-menu h1 {
+    line-height: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.vertical-menu {
+    position: fixed;
+    left: 15px;
+    top: 0;
+    width: 300px;
+    height: 100dvh;
+    min-height: 100%;
+    padding: 10px 70px;
+}
+
+.vertical-menu-navbar li {
+    border-bottom: 1px solid #555;
+    font-weight: 300;
+    padding-top: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    list-style: none;
+}
+
+.navbar-item {
+    color: #ffffffCC;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar-item:hover {
+    color: #ffffff;
+}
+
+#copy {
+    color: #b0b0b0;
+    padding-top: 70px;
+    text-align: center;
+    /* font-weight: 300; */
+    font-size: 13px;
+}
+
+h2 {
+    width: 95.4%;
+    border-bottom: 1px solid #555;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.container {
+    z-index: -1;
+    width: auto;
+    min-width: 900px;
+    position: absolute;
+    left: 360px;
+    top: 70px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+.image-container img {
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+}
+
+.image-container img:hover {
+    transform: scale(1.01);
+    opacity: 0.7;
+}
+
+.container .popup-image {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+.container .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.container .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 850px;
+    height: auto;
+    object-fit: cover;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 45px #5a189a;
+    left: 465px;
+    z-index: 100;
+}
+
+.popup-blur {
+    /* position: absolute; */
+    box-shadow: 0 0 120px 30px #9a031e;
+    z-index: 1;
+}
+
+
+i {
+    color: #b0b0b0;
+    margin: 1em 8.5px;
+}
+
+i:hover, i:focus {
+    color: #ffffff;
+    transition: all 0.2s;
+    transform: scale(1.1);
+    
+}
+
+@media (max-width: 768px) {
+    .container .popup-image img {
+        width: 95%;
+    }
+}
